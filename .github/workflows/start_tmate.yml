@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+jobs:
+  Start-tmate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install tmate
+        run: apt install tmate
+      - name: Start tmate
+        run:  tmate
+        timeout-minutes: 0
