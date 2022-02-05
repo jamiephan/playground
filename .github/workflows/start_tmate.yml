@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: Install tmate
         run: sudo apt install tmate
-      - name: Start tmate
-        run:  tmate
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
         timeout-minutes: 0
